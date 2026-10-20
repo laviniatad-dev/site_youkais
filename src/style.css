@@ -43,11 +43,12 @@ img {
 }
 
 .logo img {
-    object-fit: cover;
+    object-fit: contain;
     height: 100px;
     width: auto;
     filter: sepia();
     transition: transform 0.2s ease-in-out;
+    min-width: 60px;
 }
 
 .logo img:hover {
@@ -68,12 +69,10 @@ img {
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
     align-items: center;
-    width: 100%;
     gap: 50px;
-    box-sizing: border-box;
 }
 
 nav a{
